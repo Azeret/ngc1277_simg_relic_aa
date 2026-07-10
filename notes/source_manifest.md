@@ -51,6 +51,8 @@ No E-MILES NIR weighting figure or high-Si failure-mode figure existed in the so
 | --- | --- | --- |
 | `manuscript/aa.cls` | `/home/tereza/early_type_A-A/aa.cls` | local template |
 | `manuscript/aa.bst` | `/home/tereza/early_type_A-A/bibtex/aa.bst` | local template |
+| `manuscript/linenoaa.sty` | `/home/tereza/early_type_A-A/linenoaa.sty` | local template dependency |
+| `manuscript/lineno.sty` | `/home/tereza/early_type_A-A/lineno.sty` | local template dependency |
 
 ## Items Not Copied
 

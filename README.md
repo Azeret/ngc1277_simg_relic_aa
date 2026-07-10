@@ -33,6 +33,8 @@ The A&A class and bibliography style were copied locally:
 
 - `manuscript/aa.cls`
 - `manuscript/aa.bst`
+- `manuscript/linenoaa.sty`
+- `manuscript/lineno.sty`
 
 ## Import Into Overleaf
 
