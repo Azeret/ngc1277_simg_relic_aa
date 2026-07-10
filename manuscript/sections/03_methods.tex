@@ -1,0 +1,25 @@
+\section{Methods}
+
+\subsection{Environment-dependent time-variable galaxy-wide IMF model}
+
+The underlying science framework is an environment-dependent, time-variable galaxy-wide IMF model. IGIMF/GalIMF is used as the computational machinery/tool for the galaxy-wide IMF. In the tests described here, the NGC~1277 relic best-fit parameters are held fixed unless stated otherwise; the scans perturb the enrichment channel rather than refitting the full model.
+
+\subsection{Chemical-evolution setup and standard yields}
+
+The baseline follows the Nomoto-family relic chemical-evolution setup. The analysis tracks surviving stellar mass, light-weighted metallicity proxy, light-weighted \mgfe, $[\mathrm{Si}/\mathrm{Fe}]$, \simg, and internal $M/L$. The current light-weighted abundances are chemical-evolution abundance proxies. They are not full spectral-index abundance inferences.
+
+\subsection{PopIII/PISN-like Si-rich yield-channel tests}
+
+The Si-rich experiments are copied-code yield-channel tests. The mixed PopIII/PISN-like channel is controlled by opt-in environment variables and uses copied yield tables. The representative yield mass used by the current best model is $170\,M_\odot$, but the exact yield table and row remain a manuscript TODO.
+
+\input{tables/yield_channel_parameters}
+
+\subsection{E-MILES NIR-local weighting and index comparison}
+
+E-MILES BaSTI baseFe bimodal SSP spectra were used in two ways. First, NIR-local fluxes around MgI~1.18, SiI~1.20, and SiI~1.59 were used to reweight stellar generations and recompute abundance averages. Second, public baseFe SSP spectra were measured for Eftekhari-style pseudo-equivalent-width indices, including velocity broadening to $\sigma=440\,\mathrm{km\,s^{-1}}$.
+
+These tests do not provide abundance-variable response functions. They test flux weighting and baseline SSP/index behavior, not an independent inference of $[\mathrm{Si}/\mathrm{Fe}]$ or \mgfe.
+
+\subsection{Model acceptance criteria}
+
+\input{tables/acceptance_criteria}

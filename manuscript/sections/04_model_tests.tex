@@ -1,0 +1,23 @@
+\section{Model tests}
+
+\subsection{Clean baseline}
+
+The clean baseline has code-light \simg=0.058 and E-MILES NIR-local \simg=0.075. It remains far below both the lower high-Si comparison near $\simg\simeq0.4$ and the nominal value near $\simg\simeq0.67$.
+
+\subsection{Pre-enriched initial gas}
+
+The pre-enriched initial-gas scan imposed initial \simg\ offsets from 0.0 to 0.8 while keeping the initial reservoir very metal-poor and changing only Si. The final stellar \simg\ remains near 0.058 in all cases. The initial signal is diluted, so simple low-metallicity Si pre-enrichment is insufficient.
+
+\subsection{Two-component light mixing}
+
+A two-component toy model mixed abundance ratios in linear Si/Mg space. A mild \simg=0.158 component cannot reach the nominal target: it would require 1194\% of the light for \simg=0.67. Even a \simg=0.5 component requires 175\% of the light for the nominal target. A localized interpretation therefore requires the relevant NIR light to be dominated by a component already near the target.
+
+\subsection{Mixed PopIII/PISN-like enrichment}
+
+The mild mixed model \texttt{mixed\_popiii170\_v5\_f0.1} raises code-light \simg\ to 0.158 and E-MILES NIR-local \simg\ to about 0.311. This is chemically useful but still below the lower high-Si regime.
+
+Aggressive mixed-channel models can reach higher Si/Mg. For example, \texttt{mixed\_popiii170\_v5\_c100\_z1\_f0.3} reaches E-MILES NIR-local \simg=0.574, but it fails through excessive metallicity, low \mgfe, and high stellar mass. These models are sensitivity tests rather than accepted solutions.
+
+\subsection{Timed early Si-rich enrichment}
+
+The timed local-refinement scan finds a narrow accepted boundary. Earlier and shorter channels can raise \simg\ without destroying the relic fit. Longer or stronger channels push \simg\ higher but couple into total metallicity, \mgfe, and mass.

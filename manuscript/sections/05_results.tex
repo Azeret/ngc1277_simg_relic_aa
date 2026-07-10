@@ -1,0 +1,42 @@
+\section{Results}
+
+\subsection{Best accepted model}
+
+The best accepted model is \texttt{timed\_s0\_d40\_m170\_f0p35\_e1p00}. It starts at 0 Myr, lasts 40 Myr, uses representative $170\,M_\odot$ PopIII/PISN-like yields, has fraction 0.35, and assumes full mixing efficiency.
+
+It reaches code-light \simg=0.372 and E-MILES NIR-local \simg=0.499. Its relic-fit deltas are $\Delta\mh=+0.095$, $\Delta\mgfe=-0.070$, $\Delta\log M=+0.137$, and $\Delta\log M/L=+0.053$. This is final-enough for discussion and lies within the adopted relic-fit tolerance box, but it is a boundary solution.
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{figures/final_relic_simg_key_models.png}
+\caption{Current key model comparison from the lightweight analysis products. The clean baseline stays at low \simg, while the best accepted timed Si-rich enrichment model reaches the lower high-Si regime. This figure should be remade in final A\&A style before submission.}
+\label{fig:key_models}
+\end{figure}
+
+\subsection{First rejected higher-Si/Mg model}
+
+The matched 50 Myr counterpart, \texttt{timed\_s0\_d50\_m170\_f0p35\_e1p00}, reaches E-MILES NIR-local $\simg\simeq0.523$, but is rejected. Its deltas are $\Delta\mh=+0.113$, $\Delta\mgfe=-0.085$, $\Delta\log M=+0.168$, and $\Delta\log M/L=+0.072$. The failures are total metallicity, \mgfe, and stellar mass; $M/L$ is less restrictive.
+
+\subsection{Failure modes}
+
+The high-Si failure modes are coupled. Raising Si/Mg by increasing or extending the mixed channel changes the integrated metal budget, depresses \mgfe, and shifts stellar mass. A successful enrichment channel must be Si-selective, localized, short-lived, or spectrally/aperture-weighted in a way that affects the NIR indices more than the whole one-zone relic.
+
+% TODO figure placeholder:
+% \begin{figure}
+% \centering
+% \includegraphics[width=\columnwidth]{figures/simg_pareto_failure_modes.pdf}
+% \caption{Planned Si/Mg versus relic-fit degradation plot. Source tables: constrained_simg_local_refinement_v1.csv and high_simg_failure_modes_v1.csv.}
+% \label{fig:pareto}
+% \end{figure}
+
+\subsection{Why NIR weighting alone is insufficient}
+
+E-MILES NIR-local weighting increases the clean baseline by only 0.018 dex, from \simg=0.058 to about 0.075. It helps only when a chemically Si-rich population already exists. Therefore, weighting alone does not explain the baseline discrepancy.
+
+% TODO figure placeholder:
+% \begin{figure}
+% \centering
+% \includegraphics[width=\columnwidth]{figures/emiles_nir_weighting_effect.pdf}
+% \caption{Planned comparison of current code-light and E-MILES NIR-local \simg\ values. Source table: emiles_nir_flux_weighted_abundances_v1.csv.}
+% \label{fig:emiles_weighting}
+% \end{figure}

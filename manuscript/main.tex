@@ -1,0 +1,49 @@
+\documentclass{aa}
+
+\usepackage{graphicx}
+\usepackage{txfonts}
+\usepackage{booktabs}
+\usepackage{xcolor}
+
+\newcommand{\todo}[1]{\textcolor{red}{TODO: #1}}
+\newcommand{\simg}{\ensuremath{[\mathrm{Si}/\mathrm{Mg}]}}
+\newcommand{\mgfe}{\ensuremath{[\mathrm{Mg}/\mathrm{Fe}]}}
+\newcommand{\mh}{\ensuremath{[\mathrm{M}/\mathrm{H}]}}
+
+\begin{document}
+
+\title{A brief early Si-rich enrichment channel in compact relic galaxy formation}
+
+\author{Tereza~TODO\inst{1}
+\and Collaborators~TODO\inst{2}}
+
+\institute{
+TODO: Institute 1
+\and
+TODO: Institute 2
+}
+
+\abstract
+{Compact relic galaxies provide stringent tests of early chemical enrichment because their stellar populations formed rapidly and experienced little subsequent dilution. NGC~1277 is especially interesting because Eftekhari-style near-infrared (NIR) analysis suggests high silicon relative to magnesium, while a successful clean relic model predicts much lower \simg.}
+{We test whether a short early Si-rich enrichment episode can raise the model \simg\ while preserving the relic fit in stellar mass, metallicity, \mgfe, and mass-to-light ratio.}
+{We summarize copied-code yield-channel tests built on an environment-dependent, time-variable galaxy-wide IMF model, using IGIMF/GalIMF as the computational machinery/tool. We compare clean, pre-enriched, mixed PopIII/PISN-like, and timed PopIII/PISN-like Si-rich enrichment experiments. We also test E-MILES NIR-local weighting as a first-order bridge to the observed NIR indices.}
+{The clean NGC~1277-like baseline has code-light \simg=0.058, and E-MILES NIR-local weighting raises this only to \simg=0.075. The best accepted timed model, \texttt{timed\_s0\_d40\_m170\_f0p35\_e1p00}, reaches E-MILES NIR-local \simg=0.499 while remaining within the adopted relic-fit tolerance box: $\Delta\mh=+0.095$, $\Delta\mgfe=-0.070$, $\Delta\log M=+0.137$, and $\Delta\log M/L=+0.053$. Extending the same channel to 50 Myr reaches $\simg_{\rm NIR}\simeq0.523$ but is rejected because metallicity, \mgfe, and stellar mass degrade.}
+{The current framework reaches the lower high-Si regime but not the nominal Eftekhari-like value near $\simg\simeq0.67$ without additional yield selectivity, localized enrichment, or NIR abundance-response systematics. The reported values are chemical-evolution abundance proxies, not full spectral-index abundance inferences.}
+
+\keywords{galaxies: abundances -- galaxies: elliptical and lenticular, cD -- galaxies: evolution -- galaxies: stellar content -- stars: luminosity function, mass function}
+
+\maketitle
+
+\input{sections/01_introduction}
+\input{sections/02_baseline_model}
+\input{sections/03_methods}
+\input{sections/04_model_tests}
+\input{sections/05_results}
+\input{sections/06_discussion}
+\input{sections/07_conclusions}
+\input{sections/acknowledgements}
+
+\bibliographystyle{aa}
+\bibliography{references}
+
+\end{document}
