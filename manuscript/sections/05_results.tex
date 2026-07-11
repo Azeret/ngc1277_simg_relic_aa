@@ -40,3 +40,39 @@ E-MILES NIR-local weighting increases the clean baseline by only 0.018 dex, from
 % \caption{Planned comparison of current code-light and E-MILES NIR-local \simg\ values. Source table: emiles_nir_flux_weighted_abundances_v1.csv.}
 % \label{fig:emiles_weighting}
 % \end{figure}
+
+\subsection{Normal ETG control sequence}
+
+The NGC~1277 experiment needs a control population: normal early-type galaxies should not preserve the same strong Si-rich signature as a compact relic. We therefore compare the relic-strength channel with a weak/moderate fixed diagnostic sequence for ETG models calibrated to the mass--metallicity and mass--\mgfe\ relations. These tests are copied-code fixed diagnostics, not new optimizations. M1e9, M1e10, and M1e11 use current total-mass ETG rows as upper-limit controls, while M1e12 uses the validated $f_{\rm core}=0.8$ core model.
+
+\input{tables/weakmod_etg_control_sequence}
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{figures/weakmod_etg_simg_sequence.pdf}
+\caption{Weak/moderate Si-rich fixed diagnostic sequence for ETG controls. The conservative normal-ETG channel is the 20 Myr, $f=0.10$ case. M1e9 starts close to the upper normal \simg\ range and is therefore treated as a low-mass upper-limit diagnostic.}
+\label{fig:weakmod_sequence}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{figures/weakmod_etg_simg_vs_mgfe.pdf}
+\caption{Control-sequence \simg\ versus \mgfe. The models preserve the calibration role of \mgfe\ while \simg\ separates the strength of preserved early Si-rich enrichment.}
+\label{fig:weakmod_simg_mgfe}
+\end{figure}
+
+The safest normal-ETG preserved Si-rich channel is the 20 Myr, $f=0.10$ case. It remains compatible for M1e10, M1e11, and M1e12 while modifying \simg\ without breaking the stored mass, metallicity, and \mgfe\ calibration. The 40 Myr, $f=0.20$ case is best treated as an upper-normal or boundary case. The relic-strength $f=0.35$ channel is therefore reserved for NGC~1277-like high-preservation systems rather than normal ETG calibration.
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{figures/weakmod_allowed_channel_strength_by_mass.pdf}
+\caption{Paper-facing classification of weak/moderate Si-rich channels by mass. The classification uses the multi-constraint calibration: stellar mass, metallicity, \mgfe, and whether \simg\ is in or can be diluted into the normal ETG locus with an old alpha-enhanced envelope.}
+\label{fig:weakmod_allowed_strength}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{figures/weakmod_mass_metallicity_mgfe_validation.pdf}
+\caption{Mass--metallicity and mass--\mgfe\ validation for the weak/moderate control sequence. Accepted channels preserve the global ETG calibration while changing \simg.}
+\label{fig:weakmod_validation}
+\end{figure}

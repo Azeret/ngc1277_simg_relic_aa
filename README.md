@@ -4,6 +4,8 @@ This is a clean, git-ready A&A draft directory for the NGC1277 / compact relic S
 
 The draft describes copied-code yield-channel tests of whether an NGC1277-like compact relic model can reach high NIR-inferred `[Si/Mg]` while preserving the relic fit in stellar mass, metallicity, `[Mg/Fe]`, and `M/L`.
 
+The current version also includes the weak/moderate normal-ETG control sequence. These figures and notes test whether ordinary massive ETG diagnostics can preserve the mass-metallicity and mass-`[Mg/Fe]` calibration while allowing only weak or moderate early PopIII/PISN-like Si-rich enrichment.
+
 ## Layout
 
 - `manuscript/main.tex`: A&A manuscript root.
@@ -53,7 +55,12 @@ Key generated/copied items:
 - `notes/figure_table_plan.md`
 - `notes/next_actions.md`
 - `manuscript/tables/key_models.tex`
+- `manuscript/tables/weakmod_etg_control_sequence.tex`
 - `manuscript/figures/final_relic_simg_key_models.png`
+- `manuscript/figures/weakmod_etg_simg_sequence.pdf`
+- `manuscript/figures/weakmod_etg_simg_vs_mgfe.pdf`
+- `manuscript/figures/weakmod_mass_metallicity_mgfe_validation.pdf`
+- `manuscript/figures/weakmod_allowed_channel_strength_by_mass.pdf`
 
 See `notes/source_manifest.md` for provenance.
 
@@ -62,6 +69,7 @@ See `notes/source_manifest.md` for provenance.
 - Replace placeholder authors, affiliations, and acknowledgements.
 - Verify the exact PopIII/PISN-like `170 Msun` yield table/row.
 - Verify every number in `final_relic_simg_key_models.csv`.
+- Verify the weak/moderate ETG control-sequence classifications against `paper_ready_weakmod_etg_simg_sequence_table.csv`.
 - Replace placeholder BibTeX entries with exact references.
 - Decide whether to keep the existing key-model PNG or remake all figures in a publication style.
 - Keep the language cautious: these are copied-code yield-channel tests, not production-code replacements.
